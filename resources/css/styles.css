@@ -77,6 +77,8 @@ header {
     font-size: 300%;
     text-transform: uppercase;
     margin-bottom: 30px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
 }
 
 .btn {
@@ -114,4 +116,138 @@ header {
     color: #463356;
     -webkit-transition: border 0.2s, color 0.2s;
     transition: border 0.2s, color 0.2s;
+}
+
+/***** reusable components *****/
+h2 {
+    text-align: center;
+    color: #555;
+    font-size: 240%;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    width: 10%;
+    height: 2px;
+    background-color: #4f3961;
+    margin: 20px auto;
+}
+
+.long-copy {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 145%;
+    margin-bottom: 40px;
+}
+
+.icon-big {
+    color: #4f3961;
+    font-size: 60px;
+    display: block;
+}
+
+h3 {
+    font-size: 120%;
+    font-weight: 300;
+    margin: 20px 0;
+}
+
+/******************
+    FEATURES
+******************/
+
+.features {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.features div {
+    padding: 20px 1%;
+}
+
+/******************
+    IMAGE GALLERY
+******************/
+
+.gallery {
+    width: 100%;
+    margin-top: 70px;
+}
+
+.gallery figure{
+    width: 25%; /* don't add the will have a white space for the last img, on it's right side */
+    overflow: hidden;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+    background-color: #000;
+}
+
+.gallery .col {
+    margin: 0;
+}
+
+.gallery img {
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+   
+}
+
+.gallery img:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity 0.2s, 2s, -webkit-transform 0;
+    transition: opacity 0.2s, 2s, -webkit-transform 0;
+    transition: opacity 0.2s, transform 0,2s;
+    transition: opacity 0.2s, transform 0,2s, -webkit-transform 0;
+}
+
+/******************
+    WORK
+******************/
+.work {
+    width: 80%;
+    margin: 0 auto;
+}
+/* how to add background-color properly to it??   define a class row and center it , rather than work class.*/
+
+.work_list ul {
+    list-style: none;
+}
+
+.work_list ul li {
+    margin-bottom: 60px;
+    line-height: 145%;
+   
+    
+}
+
+.list_number {
+    border: 2px solid #4f3961;
+    padding: 5px;
+    padding-top: 10px;
+    font-size: 150%;
+    text-align: center;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    float: left; /* at first, float not work, and I don't know why it's worked now*/
+    margin-right: 30px;
+}
+
+.work_img {
+    margin-left: 60%;
+}
+
+.download_button img {
+    height: 50px;
+    margin-right: 30px;
 }
