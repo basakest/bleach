@@ -21,6 +21,7 @@ header {
     background-size: cover;
     background-position: center;
     position: relative;
+    background-attachment: fixed;
 }
 
 .logo {
@@ -85,9 +86,10 @@ header {
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
-    padding: 5px 30px;
+    padding: 10px 30px;
     border-radius: 50px;
     margin-right: 20px;
+    display: inline-block;
 }
 
 .btn-full:link,
@@ -124,8 +126,8 @@ h2 {
     color: #555;
     font-size: 240%;
     font-weight: 300;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 h2:after {
@@ -144,16 +146,32 @@ h2:after {
     margin-bottom: 40px;
 }
 
+.clear:after {
+    display: table;
+    content："";
+    clear: both;
+}
+
+/****** ICONS  ******/
 .icon-big {
     color: #4f3961;
     font-size: 60px;
     display: block;
 }
 
+.icon-small {
+    color: #4f3961;
+}
+
 h3 {
     font-size: 120%;
     font-weight: 300;
     margin: 20px 0;
+}
+
+.row {
+    width: 80%;
+    margin: 0 auto;
 }
 
 /******************
@@ -167,6 +185,10 @@ h3 {
 
 .features div {
     padding: 20px 1%;
+}
+
+.features p {
+    line-height: 145%;
 }
 
 /******************
@@ -214,8 +236,8 @@ h3 {
     WORK
 ******************/
 .work {
-    width: 80%;
-    margin: 0 auto;
+   background-color: #ededed;
+   padding-bottom: 30px;
 }
 /* how to add background-color properly to it??   define a class row and center it , rather than work class.*/
 
@@ -250,4 +272,253 @@ h3 {
 .download_button img {
     height: 50px;
     margin-right: 30px;
+}
+
+/******************
+    CHARACTER
+******************/
+.characters {
+    margin-bottom: 60px;
+}
+
+.characters h3 {
+    text-transform: uppercase;
+}
+
+.characters ul {
+    list-style: none;
+}
+
+.characters ul li {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.characters ul li a:link,
+.characters ul li a:visited {
+    text-decoration: none;
+    color: #4f3961;
+    border-bottom: 1px solid #4f3961;
+}
+
+.characters ul li a:hover,
+.characters ul li a:active {
+    border-bottom: 1px solid transparent;
+    color: #555;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.character-item {
+    margin-bottom: 10px;
+}
+
+/******************
+    EVALUATIONS
+******************/
+.evaluations {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/bg-4.jpeg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/bg-4.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    padding-bottom: 60px;
+}
+
+.evaluations h2 {
+    color: #fff;
+}
+
+.evaluations p:first-of-type {
+    line-height: 145%;
+    margin-bottom: 20px;
+}
+
+.evaluations p:first-of-type:before {
+    content: '\“';
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.evaluations img {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    float: left;
+}
+
+.evaluation .name {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+/******************
+    SIGN-UP
+******************/
+.sign-up {
+    background-color: #eaeaea;
+    padding-bottom: 60px;
+}
+
+.sign-up h3 {
+    font-size: 150%;
+}
+.sign-up .col {
+    
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.plan {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.price-month {
+    color: #4f3961;
+    margin-bottom: 20px;
+}
+
+.price-month span {
+    font-size: 300%;
+    margin-right: 10px;
+}
+
+.price-day {
+    font-size: 90%;
+    margin-bottom: 30px;
+}
+
+.plan ul {
+    list-style: none;
+    border-bottom: 1px solid #e0dddd;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.plan .position {
+    margin: 10px 20%;
+    width: 60%;
+}
+
+/******************
+    FORM
+******************/
+.form {
+    padding-bottom: 60px;
+}
+
+.form form label {
+    display: inline-block;
+    text-align: left;
+    padding-left: 15%;
+}
+
+.form form input[type='text'],
+.form form input[type='email'],
+.form form select,
+.form form textarea {
+    width: 40%
+}
+
+.form form textarea {
+    height: 90px;
+}
+
+.form form input[type='checkbox'] {
+    display: inline-block;
+    padding-right: 20px;
+    border: 1px solid red;
+}
+
+input[type='submit']{
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+    border: 1px solid #4f3961;
+    background-color: #4f3961;
+    text-align: center;
+    width: auto;
+    margin-left: 40%;
+    margin-top: 10px;
+}
+
+input[type='submit']:hover{
+    border: 1px solid #463356;
+    background-color: #463356;
+    -webkit-transition: border 0.2s, background-color 0.2s;
+    transition: border 0.2s, background-color 0.2s;
+}
+
+/******************
+    FOOTER
+******************/
+footer {
+    background-color: #383838;
+}
+
+footer .nav1,
+footer .nav2 {
+    display: inline-block;
+    list-style: none;
+    padding-top: 40px;
+}
+
+footer .nav1 li,
+footer .nav2 li {
+    display: inline-block;
+    padding-right: 40px;
+    margin-bottom: 40px;
+}
+
+footer .nav1 {
+    float: left;
+}
+
+footer .nav1 li a:link,
+footer .nav1 li a:visited {
+    color: #747373;
+    text-decoration: none;
+    font-size: 90%;
+}
+
+footer .nav1 li a:hover,
+footer .nav1 li a:active {
+    transition: color 0.2s;
+    color: #fff; 
+}
+
+footer .nav2 {
+    float: right;
+}
+
+footer .nav2 li {
+    cursor: pointer;
+}
+
+footer .nav-icon {
+    font-size: 120%;
+    color: #747373;
+}
+
+footer .nav-icon:hover {
+    color: blue;
+    transition: color 0.2s;
+}
+
+footer .copyright {
+    width: 80%;
+    line-height: 145%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
