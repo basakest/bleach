@@ -80,7 +80,44 @@
 
 @media only screen and (max-width: 768px) {
     .main-nav {
+        margin-top: 30px;
+        position: relative;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 10px;
+    }
+    
+    .main-nav ul {
         display: none;
+    }
+    .main-nav ul li {
+        display: block;
+        padding-bottom: 10px;
+        font-size: 120%;
+        line-height: 145%;
+    }
+
+    .main-nav ul li a:link,
+    .main-nav ul li a:visited,
+    .main-nav ul li a:hover,
+    .main-nav ul li a:active {
+        border-bottom: 0;
+    }
+    
+    .mobile-logo {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 0;
+        font-size: 40px;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    .sticky .mobile-logo,
+    .sticky ul li a {
+        color: #555;
     }
     
     .long-copy {

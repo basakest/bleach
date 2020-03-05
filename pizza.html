@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>pizza</title>
+        <style type="text/css">
+            * {
+                box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+            }
+            
+            html {
+                @import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400&display=swap');
+                font-size: 20px;
+                color: #555;
+                font-family: 'Lato';
+            }
+            
+            body {
+                height: 100vh;
+                background-image: linear-gradient(to right bottom, #8beacd, #1885ad);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .pizza {
+                display: flex;
+                align-items: stretch;
+                max-width: 90%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            
+            .pizza__img {
+               width: 45%;
+               
+            }
+            
+            .pizza__img img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            
+            .pizza__content {
+                padding: 20px 30px;
+                background-color: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+            
+            .pizza__title {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+            
+            .pizza__heading {
+                font-size: 120%;
+                flex: 0 0 auto;
+                margin-right: auto;
+            }
+            
+            .pizza__btn {
+                border-radius: 100px;
+                overflow: hidden;
+                font-size: 10px;
+                padding: 2px 7px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+            
+            .pizza__btn--1 {
+                margin-right: 20px;
+                background-color: greenyellow;
+            }
+            
+            .pizza__btn--2 {
+                background-color: aqua;
+            }
+            
+            .pizza__features {
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .pizza__price {
+                background-image: linear-gradient(#8beacd, #1885ad);
+                display: flex;
+                writing-mode: vertical-rl;
+                justify-content: center;
+                align-items: center;
+                padding: 0 10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="pizza">
+            <div class="pizza__img">
+                <img src="resources/img/pizza.jpeg" alt="the img of pizza">
+            </div>
+            <div class="pizza__content">
+                <div class="pizza__title">
+                    <h1 class="pizza__heading">Pizza Vegetale👌🏻</h1>
+                    <div class="pizza__btn pizza__btn--1">#vegetarian</div>
+                    <div class="pizza__btn pizza__btn--2">#vegetarian</div>
+                </div>
+                <div class="pizza__text">
+                    <p>Yummy veggie pizza with tasty olives, crisp peppers, fresh arugula and original italian tomato sauce.</p>
+                </div>
+                <div class="pizza__features">
+                    <div class="pizza__feature">
+                        <span>🍕</span>850 KCAL
+                    </div>
+                    <div class="pizza__feature">
+                        <span>⏱</span>30 MINL
+                    </div>
+                    <div class="pizza__feature">
+                        <span>⭐️</span>4.7 / 5
+                    </div>
+                </div>
+            </div>
+            <div class="pizza__price">
+                $12.99
+            </div>
+        </div>
+    </body>
+</html>

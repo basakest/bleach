@@ -17,10 +17,21 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/10cols.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/11cols.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/12cols.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/styles.css">
         <link rel="stylesheet" type="text/css" href="resources/css/querys.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i&display=swap" rel="stylesheet">
         <meta name="viewport" content="initial-scale=1.0, width=device-width">
+        <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/resources/favicons/site.webmanifest">
+        <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <meta name="description" content="this is a website about bleach">
     </head>
     <body>
         <header>
@@ -28,29 +39,30 @@
                 <img src="resources/img/logo.png" alt="the logo" class="logo">
                 <nav class="main-nav">
                     <ul class="">
-                        <li><a href="#">href one</a></li>
-                        <li><a href="#">href two</a></li>
-                        <li><a href="#">href three</a></li>
-                        <li><a href="#">href four</a></li>
+                        <li><a href="#id1">href one</a></li>
+                        <li><a href="#id2">href two</a></li>
+                        <li><a href="#id3">href three</a></li>
+                        <li><a href="#id4">href four</a></li>
                     </ul>
+                    <ion-icon name="list-outline" class="mobile-logo"></ion-icon>
                 </nav>
             </div>
             
             <div class="main-part">
                 <h1>do you like bleach?<br />yes, i love it!</h1>
-                <a href="#" class="btn btn-full">btn 1</a>
-                <a href="#" class="btn btn-ghost">btn 2</a>
+                <a href="#" class="btn btn-full btn1">btn 1</a>
+                <a href="#" class="btn btn-ghost btn2">btn 2</a>
             </div>
         </header>
         
-        <div class="section group js--wp-1">
+        <div class="section group js--wp-1 js--section-1" id="id1">
             <div class="row">
                 <h2>the head of section 2</h2>
             </div>
             <div class="row">
                 <p class="long-copy">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes</p>
             </div>
-            <div class="group features row">
+            <div class="group features row  js--wp-2">
                 <div class="col span_1_of_4">
                     <ion-icon name="help-outline" class="icon-big"></ion-icon>
                     <h3>the h3 title</h3>
@@ -74,7 +86,7 @@
             </div>
         </div>
         
-        <section class="section group gallery">
+        <section class="section group gallery" id="id2">
             <div class="group">
                 <figure class="col span_1_of_4">
                     <img src="resources/img/gallery1.jpeg" alt="gallery1">
@@ -105,12 +117,12 @@
             </div>
         </section>
         
-        <section class="work">
+        <section class="work" id="id3">
             <div class="row">
                 <h2>this is the title of this section</h2>
                 <div class="section group">
                     <div class="col span_1_of_2">
-                        <img src="resources/img/person.png" alt="person" class="work_img">
+                        <img src="resources/img/person.png" alt="person" class="work_img js--wp-3">
                     </div>
                     <div class="work_list col span_1_of_2">
                         <ul>
@@ -127,18 +139,18 @@
                                 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</li>
                             </div>
                         </ul>
-                        <a href="" class="download_button"><img src="resources/img/download-app.svg"></a>
-                        <a href="" class="download_button"><img src="resources/img/download-app-android.png"></a>
+                        <a href="" class="download_button"><img src="resources/img/download-app.svg" alt="download btn for apple"></a>
+                        <a href="" class="download_button"><img src="resources/img/download-app-android.png" alt="download btn for android"></a>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="characters section group">
+        <section class="characters section group" id="id4">
             <div class="row">
                 <h2>this is h2 of this section</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-4">
                 <div class="col span_1_of_4 character">
                     <img src="resources/img/gallery1.jpeg" alt="character1">
                     <h3>the name</h3>
@@ -223,31 +235,31 @@
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
                     </p>
-                    <img src="resources/img/gallery3.jpeg">
+                    <img src="resources/img/gallery3.jpeg" alt="customer1">
                     <p class="name">the name</p>
                 </div>
                 <div class="col span_1_of_3 evaluation">
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
                     </p>
-                    <img src="resources/img/gallery3.jpeg">
+                    <img src="resources/img/gallery3.jpeg" alt="customer2">
                     <p class="name">the name</p>
                 </div>
                 <div class="col span_1_of_3 evaluation">
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes
                     </p>
-                    <img src="resources/img/gallery3.jpeg">
+                    <img src="resources/img/gallery3.jpeg" alt="customer3">
                     <p class="name">the name</p>
                 </div>
             </div>
         </section>
         
-        <section class="sign-up group section">
+        <section class="sign-up group section js--section-2">
             <div class="row">
                 <h2>the title of sign up</h2>
             </div>
-            <div class="row">
+            <div class="row js--wp-5">
                 <div class="col span_1_of_3">
                     <div class="plan">
                         <h3>name of plan</h3>
@@ -335,7 +347,7 @@
             <div class="row">
                 <h2>please fill this form</h2>
             </div>
-            <form method="post" action="">
+            <form method="post" action="#">
                 <div class="row group">
                     <label for="name" class="col span_1_of_3">Name</label>
                     <input type="text" name="name" placeholder="enter your name" required id="name" class="col span_2_of_3">
@@ -354,7 +366,7 @@
                     </select>
                 </div>
                 <div class="row group">
-                    <label for="newsletter" class="col span_1_of_3">Newsletter?</label>
+                    <label class="col span_1_of_3">Newsletter?</label>
                     <div class="col span_2_of_3">
                         <input type="checkbox" name="newsletter" value="yes">yes, please
                     </div>
@@ -381,10 +393,10 @@
                     <li><a href="#">link1</a></li>
                 </ul>
                 <ul class="nav2">
-                    <li><href="#"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></href></li>
-                    <li><href="#"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></href></li>
-                    <li><href="#"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></href></li>
-                    <li><href="#"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></href></li>
+                    <li><a href="###"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></a></li>
+                    <li><a href="###"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></a></li>
+                    <li><a href="###"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></a></li>
+                    <li><a href="###"><ion-icon name="logo-twitter" class="nav-icon"></ion-icon></a></li>
                 </ul>
             </div>
             <div class="row">
